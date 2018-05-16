@@ -42,6 +42,7 @@ from ..vall.app_queue import register as app_queue_register
 from ..vall.app_read import register as app_read_register
 from ..vall.app_record import register as app_record_register
 from ..vall.app_sayunixtime import register as app_sayunixtime_register
+from ..vall.app_senddtmf import register as app_senddtmd_register
 from ..vall.app_setcallerid import register as app_setcallerid_register
 from ..vall.app_stack import register as app_stack_register
 from ..vall.app_system import register as app_system_register
@@ -51,6 +52,7 @@ from ..vall.app_voicemail import register as app_voicemail_register
 from ..vall.app_waituntil import register as app_waituntil_register
 from ..vall.app_while import register as app_while_register
 from ..vall.chan_sip import register as chan_sip_register
+from ..vall.func_hangupcause import register as func_hangupcause_register
 from ..vall.res_agi import register as res_agi_register
 from ..vall.res_fax import register as res_fax_register
 from ..vall.res_indications import register as res_indications_register
@@ -87,6 +89,7 @@ def register(app_loader):
             app_read_register,
             app_record_register,
             app_sayunixtime_register,
+            app_senddtmd_register,
             app_setcallerid_register,
             app_stack_register,
             app_system_register,
@@ -96,6 +99,7 @@ def register(app_loader):
             app_waituntil_register,
             app_while_register,
             chan_sip_register,
+            func_hangupcause_register,
             res_agi_register,
             res_fax_register,
             res_indications_register,

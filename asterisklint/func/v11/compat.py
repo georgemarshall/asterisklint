@@ -32,6 +32,7 @@ from ..vall.func_enum import register as func_enum_register
 from ..vall.func_env import register as func_env_register
 from ..vall.func_global import register as func_global_register
 from ..vall.func_groupcount import register as func_groupcount_register
+from ..vall.func_hangupcause import register as func_hangupcause_register
 from ..vall.func_logic import register as func_logic_register
 from ..vall.func_math import register as func_math_register
 from ..vall.func_md5 import register as func_md5_register
@@ -63,6 +64,7 @@ def register(func_loader):
             func_env_register,
             func_global_register,
             func_groupcount_register,
+            func_hangupcause_register,
             func_logic_register,
             func_math_register,
             func_md5_register,
