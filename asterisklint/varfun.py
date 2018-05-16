@@ -409,6 +409,9 @@ class VarLoader(metaclass=Singleton):
             if isinstance(length, Var):
                 # We cannot determine anything more from this.
                 pass
+            if isinstance(start, Var):
+                # We cannot determine anything more from this.
+                pass
             elif (length and (
                     length.isdigit() or
                     (length[0] == '-' and length[1:].isdigit()))):
