@@ -56,6 +56,7 @@ from ..vall.func_hangupcause import register as func_hangupcause_register
 from ..vall.res_agi import register as res_agi_register
 from ..vall.res_fax import register as res_fax_register
 from ..vall.res_indications import register as res_indications_register
+from ..vall.res_monitor import register as res_monitor_register
 from ..vall.res_musiconhold import register as res_musiconhold_register
 
 
@@ -103,5 +104,6 @@ def register(app_loader):
             res_agi_register,
             res_fax_register,
             res_indications_register,
+            res_monitor_register,
             res_musiconhold_register):
         regfunc(app_loader)

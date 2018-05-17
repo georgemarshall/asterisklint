@@ -19,7 +19,7 @@ from asterisklint.where import DUMMY_WHERE
 
 APPLICATION_LIST = (
     'AGI', 'AddQueueMember', 'Answer', 'Authenticate', 'Background',
-    'Busy', 'CELGenUserEvent', 'ChanIsAvail',
+    'Busy', 'CELGenUserEvent', 'ChangeMonitor', 'ChanIsAvail',
     'ChanSpy', 'ChannelRedirect', 'ConfBridge', 'Congestion',
     'ContinueWhile', 'ControlPlayback',
     'DateTime', 'Dial', 'DumpChan',
@@ -28,8 +28,8 @@ APPLICATION_LIST = (
     'Hangup', 'HangupCauseClear', 'ImportVar', 'Log', 'Macro',
     'MacroExclusive', 'MacroExit', 'MacroIf', 'MailboxExists', 'MeetMe',
     'MeetMeAdmin', 'MeetMeChannelAdmin', 'MeetMeCount',
-    'MixMonitor', 'MusicOnHold', 'MYSQL',
-    'NoCDR', 'NoOp', 'Page', 'PauseQueueMember',
+    'MixMonitor', 'Monitor', 'MusicOnHold', 'MYSQL',
+    'NoCDR', 'NoOp', 'Page', 'PauseMonitor', 'PauseQueueMember',
     'Pickup', 'PickupChan', 'PickupOld1v4', 'PlayTones', 'Playback',
     'Proceeding', 'Progress', 'Queue', 'QueueLog', 'Read', 'ReceiveFAX',
     'Record', 'RemoveQueueMember', 'ResetCDR', 'RetryDial', 'Return',
@@ -37,11 +37,11 @@ APPLICATION_LIST = (
     'SLAStation', 'SLATrunk', 'SayAlpha', 'SayDigits', 'SayNumber',
     'SayPhonetic', 'SayUnixTime', 'SendFAX', 'SetAMAFlags',
     'SetCallerID', 'SetCallerPres', 'SetGlobalVar', 'SetMusicOnHold',
-    'StackPop', 'StartMusicOnHold', 'StopMixMonitor', 'StopMusicOnHold',
-    'StopPlayTones', 'System', 'TryExec', 'TrySystem', 'Unknown',
-    'UnpauseQueueMember', 'UserEvent', 'VMAuthenticate', 'Verbose',
-    'VMSayName', 'VoiceMail', 'VoiceMailMain', 'VoiceMailPlayMsg',
-    'Wait', 'WaitExten',
+    'StackPop', 'StartMusicOnHold', 'StopMixMonitor', 'StopMonitor',
+    'StopMusicOnHold', 'StopPlayTones', 'System', 'TryExec', 'TrySystem',
+    'Unknown', 'UnpauseMonitor', 'UnpauseQueueMember', 'UserEvent',
+    'VMAuthenticate', 'Verbose', 'VMSayName', 'VoiceMail', 'VoiceMailMain',
+    'VoiceMailPlayMsg', 'Wait', 'WaitExten',
     'WaitMusicOnHold', 'WaitUntil', 'While',
 
     # These are skipped from the test because they require certain
